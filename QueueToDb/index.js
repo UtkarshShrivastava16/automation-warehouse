@@ -2,7 +2,6 @@ const { ComputerVisionClient } = require('@azure/cognitiveservices-computervisio
 const { ApiKeyCredentials } = require('@azure/ms-rest-js');
 const { CosmosClient } = require('@azure/cosmos');
 const { BlobServiceClient } = require('@azure/storage-blob');
-const toArray = require('stream-to-array');
 
 module.exports = async function (context, myQueueItem) {
     const visionKey = process.env['VISION_API_KEY'];
